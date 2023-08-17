@@ -1,7 +1,5 @@
 <template>
   <header>
-
-
     <div v-if="racers.length">
       <TransitionGroup tag="ul" name="fade" class="liveTimingWrapper">
         <liveTimingCard v-for="(racer, i) in racers" :key="racer.name" :racer="racer" :position="i + 1"
@@ -10,10 +8,6 @@
     </div>
     <button @click=" changePositions()">Change positions</button>
   </header>
-
-  <main>
-    <TheWelcome />
-  </main>
 </template>
 
 
